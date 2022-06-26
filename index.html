@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de sueldo</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+    
+<body class="Background">
+    <div id="app">
+        <header>
+            <h1> {{ title1 }} <span>{{ title2 }}</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <mostrar-calculadora></mostrar-calculadora>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Compania</h4>
+                        <ul>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Nuestros servicios</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Siguenos</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"><img v-bind:src="facebook" class="social-links"></i></a>
+                            <a href="#"><i class="fab fa-twitter"><img v-bind:src="twitterk"></i></a>
+                            <a href="#"><i class="fab fa-instagram"><img v-bind:src="instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"><img v-bind:src="linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </div>
+
+    <!-- Import App-->
+    <script src="./Aplicacion.js"></script>
+
+    <!-- Import Components-->
+    <script src="./Componentes/Calculadora.js"></script>
+
+    <!-- Mount App-->
+    <script>const mountedApp=app.mount('#app')</script>
+
+</body>
+    
+
+</html>
