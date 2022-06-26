@@ -7,6 +7,7 @@ const app = Vue.createApp({
             facebook:'./images/face_logo.png',
             twitter:'./images/twitter_logo.png',
             linkedin:'./images/linkedin_logo.png',
+            compania:'Branca'
 
         }
     }
